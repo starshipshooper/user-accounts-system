@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the #{title} Index view.
+  if(user)
+    p You are logged in as #{user.username}
+  if(!user)
+    p Not logged in
+    p
+      a(href='/account/login')  Log in
+
+    p
+      a(href='/account/register')  Register

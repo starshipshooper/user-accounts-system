@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  if(user)
+  h1= title
+  p Welcome to the #{title} Index view.
+    p You are logged in as #{user.username}
